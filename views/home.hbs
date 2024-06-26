@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>narulas website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <style>
+        .navbar{
+            color: red;
+        }
+        *{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    border: border-box;
+}
+
+.navbar{
+    height: 60px;
+    background-color: #0f1111;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.nav-logo{
+    height: 50px;
+    width: 110px;
+}
+
+.logo{
+    background-image: url("../images/narulas-logo.png");
+    height: 50px;
+    width: 110px;
+    background-size: cover;
+}
+
+.border{
+    border: 2px solid transparent;
+}
+
+.border:hover{
+    border: 1.5px solid white;
+}
+
+/* box2  add-first and second*/
+
+.add-first{
+    color: #cccccc;
+    font-size: 0.85rem;
+    margin-left: 15px;
+}
+
+.add-second{
+    font-size: 1rem;
+    margin-left: 3px;
+}
+
+.add-icon{
+    display: flex;
+    align-items: center;
+    margin-left: 3px;
+}
+
+/* box 3 search bar */
+
+.nav-search{
+    display: flex;
+    justify-content: space-evenly;
+    background-color:pink;
+    width: 620px ;
+    height: 40px;
+    border-radius: 4px;
+}
+
+.search-select{
+    background-color: #f3f3f3;
+    width: 50px ;
+    text-align: center;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border: none;
+}
+
+.search-input{
+    width: 100%;
+    font-size: 1rem;
+    border: none;
+    border-radius: 4px;
+}
+
+.search-icon{
+    width: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    background-color: rgb(175, 134, 22);
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    color: #0f1111 ;
+}
+
+.nav-search:hover{
+    border: 2px solid orange;
+}
+
+
+/* box 4  */
+
+span{
+    font-size: 0.7rem;
+}
+
+.nav-second{
+    font: 0.85rem;
+    font-weight: 700;
+}
+
+/* box 6 cart selector*/
+
+.nav-cart i{
+    font-size: 35px;
+}
+
+.nav-cart{
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+
+/*  */
+    </style>
+</head>
+<body>
+    
+    <header>
+        <div class="navbar">
+            <div class="nav-logo border">
+                <div class="logo"></div>
+            </div>
+            
+            <div class="nav-address border">
+                <!--<p class="add-first">Deliver to</p>-->
+                <div class="add-icon">
+                 <!-- <i class="fa-solid fa-location-pin"></i>-->
+                    <i class="fa-solid fa-phone"></i>
+                    <p class="add-second">1800-202-4444</p>
+                </div>
+            </div>
+
+            <div class="nav-search">
+                <!--<select class="search-select">
+                    <option>All</option>
+                </select> -->
+                <input placeholder="What are you looking for?" class="search-input">
+                <div class="search-icon">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+            </div>
+
+
+            <div class="nav-signin border">
+               <!-- <p><span>Hello, sign in</span></p>
+                <p class="nav-second">Account & Lists</p>-->
+                <p>Track Order</p>
+            </div>
+
+            <div class="nav-return border">
+                <p><span>Sign In</span></p>
+                <p class="nav-second">& Sign Up</p>
+            </div>
+
+            <div class="nav-cart border">
+                <i class="fa-solid fa-cart-shopping"></i>
+                Cart
+            </div>
+        </div>
+
+        <div class="panel">
+            <div class="panel-All">
+                <i class="fa-solid fa-bars"></i>
+                All
+            </div>
+        </div>
+
+    </header>
+
+</body>
+</html>
