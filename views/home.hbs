@@ -31,7 +31,7 @@
 }
 
 .logo{
-    background-image: url("./narulas-logo.png");
+    background-image: url("../images/narulas-logo.png");
     height: 50px;
     width: 110px;
     background-size: cover;
@@ -111,12 +111,19 @@
 /* box 4  */
 
 span{
-    font-size: 0.7rem;
+    font-size: 0.9rem;
+    font-weight: 700;
 }
 
 .nav-second{
     font: 0.85rem;
     font-weight: 700;
+}
+#signin2 {
+    /* Remove existing styles */
+    text-decoration: none; /* Example of removing underline */
+    color: white; /* Example of resetting color */
+    /* Add any other specific styles you need */
 }
 
 /* box 6 cart selector*/
@@ -168,8 +175,9 @@ span{
             </div>
 
             <div class="nav-return border">
-                <p><span>Sign In</span></p>
-                <p class="nav-second">& Sign Up</p>
+                <a href="login" id="signin2">
+                <p ><i class="fa-solid fa-user"></i>{{name}} <span>Account</span></p> 
+          
             </div>
 
             <div class="nav-cart border">
