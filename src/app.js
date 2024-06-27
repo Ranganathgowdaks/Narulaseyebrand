@@ -1,9 +1,9 @@
 const express = require("express");
-const hbs = require("hbs"); // Include Handlebars
+const hbs = require("hbs"); // Incalude Handlebars
 const mongoose = require("mongoose");
 const path = require("path");
 const bodyParser = require("body-parser");
-
+const  signup=require("./Signup");
 const app = express();
 
 // Middlewarec
@@ -20,9 +20,30 @@ app.get("/", (req, res) => {
     res.render("home");
 });
 
+
+app.get("/signup",(req, res) => {
+    res.render("signup")
+})
+
+app.get("/login",(req, res) => {
+    res.render("login")
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
 // MongoDB connection and server start
 const PORT = process.env.PORT || 8000;
-mongoose.connect("mongodb://localhost:27017/yourDatabaseName", {
+mongoose.connect("mongodb://localhost:27017/narulas", {
     useNewUrlParser: true,
     useUnifiedTopology: true
 })
