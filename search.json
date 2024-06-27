@@ -1,0 +1,50 @@
+[
+    {
+        "id": 1,
+        "name": "Classic Black Frame Glasses",
+        "img": "classic_black_frame.jpg",
+        "price": 150,
+        "discount": 20,
+        "desc": "Timeless black frame glasses with a modern twist. Perfect for everyday wear."
+    },
+    {
+        "id": 2,
+        "name": "Round Retro Sunglasses",
+        "img": "round_retro_sunglasses.jpg",
+        "price": 200,
+        "discount": 30,
+        "desc": "Vintage-inspired round sunglasses that offer UV protection and style."
+    },
+    {
+        "id": 3,
+        "name": "Aviator Sunglasses",
+        "img": "aviator_sunglasses.jpg",
+        "price": 250,
+        "discount": 50,
+        "desc": "Stylish aviator sunglasses with polarized lenses, perfect for any occasion."
+    },
+    {
+        "id": 4,
+        "name": "Cat Eye Glasses",
+        "img": "cat_eye_glasses.jpg",
+        "price": 180,
+        "discount": 40,
+        "desc": "Elegant cat eye glasses that add a touch of sophistication to your look."
+    },
+    {
+        "id": 5,
+        "name": "Sporty Sunglasses",
+        "img": "sporty_sunglasses.jpg",
+        "price": 220,
+        "discount": 25,
+        "desc": "Durable and stylish sunglasses designed for sports and outdoor activities."
+    },
+    {
+        "id": 6,
+        "name": "Blue Light Blocking Glasses",
+        "img": "blue_light_blocking_glasses.jpg",
+        "price": 120,
+        "discount": 15,
+        "desc": "Protect your eyes from digital strain with these blue light blocking glasses."
+    }
+]

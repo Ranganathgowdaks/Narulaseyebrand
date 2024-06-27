@@ -1,0 +1,12 @@
+[
+    {
+        "id": 1,
+        "name": "narulalogo",
+        "img": "narulas-logo.png"
+    },
+    {
+        "id": 2,
+        "name": "signupbackgrnd",
+        "img": "signupbackground.png"
+    }
+]

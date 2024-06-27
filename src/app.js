@@ -6,14 +6,21 @@ const bodyParser = require("body-parser");
 const flash = require('connect-flash');
 const session = require('express-session');
 const bcrypt = require('bcryptjs');
-
+const Image=require("./imagesdb");
+const imageData=require("../images.json")
 const signup = require("./Signup");
 
 const app = express();
 
+
 // Body parser middleware
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
+app.use(express.static(path.join(__dirname, "../public/images")));
+// // Serve static files from public directory
+// app.use(express.static(path.join(__dirname, '../public')));
+
+console.log(path.join(__dirname, "../public/images"))
 
 // Express session middleware
 app.use(session({
@@ -104,6 +111,37 @@ app.post("/login", async (req, res) => {
         return res.render("login", { error: "An error occurred. Please try again later." });
     }
 });
+
+/////
+
+
+
+
+app.get('/images', async (req, res) => {
+    try {
+        // Fetch all images from MongoDB
+        const images = await Image.find();
+
+        // Render a view to display the images (example: using handlebars)
+        res.render('images', { images });
+    } catch (err) {
+        console.error('Error fetching images:', err);
+        res.status(500).send('Error fetching images');
+    }
+});
+//json data
+// Insert data into MongoDB
+// Image.insertMany(imageData)
+// .then((insertedDocs) => {
+//   console.log('Images inserted successfully:', insertedDocs);
+//   mongoose.connection.close(); // Close the connection after insertion
+// })
+// .catch(err => {
+//   console.error('Error inserting images:', err);
+//   mongoose.connection.close(); // Close the connection on error
+// })
+// .catch(err => console.error('MongoDB connection error:', err));
+
 
 
 // MongoDB connection and server start
