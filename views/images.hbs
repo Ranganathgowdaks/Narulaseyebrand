@@ -1,0 +1,17 @@
+<!-- images.hbs -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Images</title>
+</head>
+<body>
+    <h1>Images</h1>
+    {{#each images}}
+        <div>
+            <h2>{{name}}</h2>
+            <img src="/path/to/your/images/{{img}}" alt="{{name}}">
+        </div>
+    {{/each}}
+</body>
+</html>
